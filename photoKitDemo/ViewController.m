@@ -36,6 +36,10 @@
     
     button.backgroundColor = [UIColor redColor];
     
+    [button setTitle:@"点我" forState:UIControlStateNormal];
+    
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [button addTarget:self action:@selector(pressBtn:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:button];
