@@ -15,6 +15,11 @@
 		CB868F561E4F13A5007A9B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB868F541E4F13A5007A9B3C /* LaunchScreen.storyboard */; };
 		CB868F611E4F13A5007A9B3C /* photoKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB868F601E4F13A5007A9B3C /* photoKitDemoTests.m */; };
 		CB868F6C1E4F13A5007A9B3C /* photoKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB868F6B1E4F13A5007A9B3C /* photoKitDemoUITests.m */; };
+		CB868F841E4F13ED007A9B3C /* bigImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB868F7B1E4F13ED007A9B3C /* bigImageCollectionViewCell.m */; };
+		CB868F851E4F13ED007A9B3C /* myPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB868F7D1E4F13ED007A9B3C /* myPhotoCollectionViewCell.m */; };
+		CB868F861E4F13ED007A9B3C /* photoDetiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB868F7F1E4F13ED007A9B3C /* photoDetiViewController.m */; };
+		CB868F871E4F13ED007A9B3C /* PhotoScrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB868F811E4F13ED007A9B3C /* PhotoScrViewController.m */; };
+		CB868F881E4F13ED007A9B3C /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB868F831E4F13ED007A9B3C /* PhotosViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		CB868F671E4F13A5007A9B3C /* photoKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photoKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB868F6B1E4F13A5007A9B3C /* photoKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = photoKitDemoUITests.m; sourceTree = "<group>"; };
 		CB868F6D1E4F13A5007A9B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB868F7A1E4F13ED007A9B3C /* bigImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bigImageCollectionViewCell.h; sourceTree = "<group>"; };
+		CB868F7B1E4F13ED007A9B3C /* bigImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bigImageCollectionViewCell.m; sourceTree = "<group>"; };
+		CB868F7C1E4F13ED007A9B3C /* myPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		CB868F7D1E4F13ED007A9B3C /* myPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		CB868F7E1E4F13ED007A9B3C /* photoDetiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = photoDetiViewController.h; sourceTree = "<group>"; };
+		CB868F7F1E4F13ED007A9B3C /* photoDetiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = photoDetiViewController.m; sourceTree = "<group>"; };
+		CB868F801E4F13ED007A9B3C /* PhotoScrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoScrViewController.h; sourceTree = "<group>"; };
+		CB868F811E4F13ED007A9B3C /* PhotoScrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoScrViewController.m; sourceTree = "<group>"; };
+		CB868F821E4F13ED007A9B3C /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		CB868F831E4F13ED007A9B3C /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		CB868F451E4F13A5007A9B3C /* photoKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CB868F791E4F13D4007A9B3C /* photoKit */,
 				CB868F491E4F13A5007A9B3C /* AppDelegate.h */,
 				CB868F4A1E4F13A5007A9B3C /* AppDelegate.m */,
 				CB868F4C1E4F13A5007A9B3C /* ViewController.h */,
@@ -138,6 +154,39 @@
 				CB868F6D1E4F13A5007A9B3C /* Info.plist */,
 			);
 			path = photoKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		CB868F791E4F13D4007A9B3C /* photoKit */ = {
+			isa = PBXGroup;
+			children = (
+				CB868F8A1E4F13FD007A9B3C /* controller */,
+				CB868F891E4F13F4007A9B3C /* view */,
+			);
+			name = photoKit;
+			sourceTree = "<group>";
+		};
+		CB868F891E4F13F4007A9B3C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CB868F7A1E4F13ED007A9B3C /* bigImageCollectionViewCell.h */,
+				CB868F7B1E4F13ED007A9B3C /* bigImageCollectionViewCell.m */,
+				CB868F7C1E4F13ED007A9B3C /* myPhotoCollectionViewCell.h */,
+				CB868F7D1E4F13ED007A9B3C /* myPhotoCollectionViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		CB868F8A1E4F13FD007A9B3C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB868F7E1E4F13ED007A9B3C /* photoDetiViewController.h */,
+				CB868F7F1E4F13ED007A9B3C /* photoDetiViewController.m */,
+				CB868F801E4F13ED007A9B3C /* PhotoScrViewController.h */,
+				CB868F811E4F13ED007A9B3C /* PhotoScrViewController.m */,
+				CB868F821E4F13ED007A9B3C /* PhotosViewController.h */,
+				CB868F831E4F13ED007A9B3C /* PhotosViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +256,7 @@
 				TargetAttributes = {
 					CB868F421E4F13A5007A9B3C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KUVD96Z783;
 						ProvisioningStyle = Automatic;
 					};
 					CB868F5B1E4F13A5007A9B3C = {
@@ -274,8 +324,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB868F4E1E4F13A5007A9B3C /* ViewController.m in Sources */,
+				CB868F851E4F13ED007A9B3C /* myPhotoCollectionViewCell.m in Sources */,
+				CB868F871E4F13ED007A9B3C /* PhotoScrViewController.m in Sources */,
 				CB868F4B1E4F13A5007A9B3C /* AppDelegate.m in Sources */,
+				CB868F861E4F13ED007A9B3C /* photoDetiViewController.m in Sources */,
+				CB868F881E4F13ED007A9B3C /* PhotosViewController.m in Sources */,
 				CB868F481E4F13A5007A9B3C /* main.m in Sources */,
+				CB868F841E4F13ED007A9B3C /* bigImageCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +479,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUVD96Z783;
 				INFOPLIST_FILE = photoKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwhs.photoKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ch999.CH999;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,9 +491,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUVD96Z783;
 				INFOPLIST_FILE = photoKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwhs.photoKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ch999.CH999;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -507,6 +564,7 @@
 				CB868F721E4F13A5007A9B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB868F731E4F13A5007A9B3C /* Build configuration list for PBXNativeTarget "photoKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +573,7 @@
 				CB868F751E4F13A5007A9B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB868F761E4F13A5007A9B3C /* Build configuration list for PBXNativeTarget "photoKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +582,7 @@
 				CB868F781E4F13A5007A9B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
